@@ -12,14 +12,14 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 75px;
-  background-color: teal;
+  /* background-color: teal; */
 }
 
 .logotipo {
   display: flex;
   margin-left: 160px;
-  flex-direction: column;
-  text-align: center;
+  /* flex-direction: column;
+  text-align: center; */
   /* background-color: tomato; */
 }
 
@@ -31,20 +31,37 @@
 }
 
 .top_menu_options {
-  margin-right: 160px;  
+  /* margin-right: 160px;   */
 }
 
-.top_menu_options a {
-  margin: 41px;
+.top_menu_options a{
+  margin-right: 160px;
+  margin-left: -80px;
+  /* margin-right: 0px; */
   text-decoration:none;
   color: inherit;
 }
 
 .retangle {
-  width: 900px;
+  width: 710px;
   height: 2px;
   background: #E7E9E6 0% 0% no-repeat padding-box;
   opacity: 1;
-  margin-top: 23px;
-  margin-left: 100px;
+  margin-top: 20px;
+  margin-right: 0;
+  /* margin-left: 100px; */
+}
+
+body {
+  background-image: url(imgs/Grupo_15.png);
+  background-size: 100%;
+}
+
+.home {
+  text-align: right;
+  margin-left: 160;
+  font: normal normal normal 100px/133px Playfair Display;
+  color: #E7E9E6;
+  margin-right: 160px;
+  margin-top: 290px;
 }
