@@ -120,7 +120,13 @@ h1 {
   color: #35363A;
   background: #D6C2B7 0% 0% no-repeat padding-box;  
   margin-bottom: 175px;
-  cursor: pointer
+  cursor: pointer;
+  transition: .5s;
+}
+
+.button:hover {
+  background: #917d73;
+  color: white;
 }
 
 footer {
@@ -186,28 +192,31 @@ footer {
     color: #E7E9E6;
     font: normal normal normal 35px/47px Playfair Display;
     margin-right: 0px;
-    /* background-color: red; */
-    /* position: fixed; */
   }
   
   .top_menu_options {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-right: 0px;
     margin-left: 0px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 100vh;
-    width: 100vh;
+    width: 100%;
     background: #35363A;
     opacity: 0;
+    pointer-events: none;
+    cursor: default; 
+    transition: .5s ease-in-out;
   }
   
-  .top_menu_options a{  
-    text-decoration:none;
+  .top_menu_options a{
+    margin-top: -200px; 
+    text-decoration: none;
     color: inherit;
   }
   
@@ -261,12 +270,18 @@ footer {
     bottom: 0;
   }
   
-  #menu-hamburguer:checked ~ div .top_menu_options{
+  #menu-hamburguer:checked ~ .top_menu_options{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #menu-hamburguer:checked ~ .item_name {
     opacity: 0;
+    pointer-events: none;
   }
 
   body {
-    background-size: 1200px;
+    background-size: 1480px;
   }
 
   .home {
