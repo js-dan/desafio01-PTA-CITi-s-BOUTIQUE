@@ -270,7 +270,7 @@ footer {
     bottom: 0;
   }
   
-  #menu-hamburguer:checked ~ .top_menu_options{
+  #menu-hamburguer:checked ~ label .top_menu_options{
     opacity: 1;
     pointer-events: all;
   }
